@@ -8,9 +8,6 @@
 </head>
 <body>
 
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-
   <nav class="navbar navbar-default">
     <div class="container">
       <div class="navbar-brand">
@@ -31,6 +28,8 @@
     <% flash.each do |name, msg| %>
       <%= content_tag :div, msg, class: "alert" %>
     <% end %>
+
     <%= yield %>
+
   </div>
 </body>
